@@ -22,7 +22,7 @@
     ansible.builtin.debug:
       msg: "Course info: {{ course | dict2items }}"
 
-  - name: convert list into map
+  - name: convert list into dict
     vars:
       course:
       - {'key': 'name', 'value': 'ansible'}
@@ -31,13 +31,13 @@
     ansible.builtin.debug:
       msg: "Course info: {{ course | items2dict }}"
 
-  - name: convert list into map
+  - name: convert list into lower
     vars:
       name: ansibleTEST
     ansible.builtin.debug:
       msg: "Course info: {{ course | lower }}"
 
-  - name: convert list into map
+  - name: convert list into upper
     vars:
       name: ansibleTEST
     ansible.builtin.debug:
