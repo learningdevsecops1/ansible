@@ -35,10 +35,10 @@
     vars:
       name: ansibleTEST
     ansible.builtin.debug:
-      msg: "Course info: {{ course | lower }}"
+      msg: "Course info: {{ name | lower }}"
 
   - name: convert list into upper
     vars:
       name: ansibleTEST
     ansible.builtin.debug:
-      msg: "Course info: {{ course | upper }}"
+      msg: "Course info: {{ name | upper }}"
